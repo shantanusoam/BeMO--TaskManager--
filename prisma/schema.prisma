@@ -3,7 +3,11 @@
 
 generator client {
   provider = "prisma-client-js"
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> 02be123fcb635606e463fd9a2236a47793902f03
 
 datasource db {
   provider = "postgresql"
@@ -33,7 +37,7 @@ model Project {
   name        String
   description String?
   due         DateTime?
-  tasks       Task[]
+  tasks        Task[]
   deleted     Boolean   @default(false)
 
   @@unique([ownerId, name])
